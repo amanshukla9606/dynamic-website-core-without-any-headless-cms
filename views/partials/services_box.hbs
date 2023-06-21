@@ -1,0 +1,33 @@
+ <section id="services_section" class="py-4">
+
+      <div class="container">   {{!-- to remove the horizontal bar always try to put things in container --}}
+
+        <h2 class="text-center text-secondary mb-4"  >What services we provide</h2>
+
+      <div class="row mt-6">
+
+          {{!-- First service column --}}
+          {{#each serv}}
+        <div class="col-md-4 py-3 ">
+
+          <div class="card bg-light border">
+             <div class="card-body"> 
+              <div class="container text-center"><i class="{{this.icon}} service_icon text-secondary" ></i></div>
+              <h5 class="card-title">{{this.title}}</h5>
+              <p>{{this.description}}</p>
+              <a href="{{this.linkText}}" class="mr-5">{{this.link}}</a>
+              <a href="{{this.linkText}}" class="ml-5 mr-5">Know More</a> 
+
+             </div>
+ 
+          </div> 
+
+        </div>
+        {{/each}} 
+        
+
+      </div>
+
+
+      </div>
+    </section>

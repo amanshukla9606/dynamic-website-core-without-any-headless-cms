@@ -1,0 +1,40 @@
+{{!-- starting of the bootstrap file this file must be included to use the bootstrap functionalities --}}
+<!doctype html> 
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS for designing -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+
+    {{!-- font awsome CSS --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    {{!-- our css --}}
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>The Tech Builders</title>
+  </head>
+  <body>
+
+     {{>navbar data = details}}  
+    {{>slider slides = slides}}
+    {{!-- banner below the slider --}}
+    {{>bannersl}}
+    {{!-- services section  --}}
+    {{>services_box serv=service}}
+    {{!-- banner below service --}}
+    {{>banner2ser}}
+    {{!-- contact us section --}}
+    {{>contact_us_section }}
+    {{!-- about section --}}
+    {{>footer}}
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  </body>
+</html>

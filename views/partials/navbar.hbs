@@ -1,0 +1,49 @@
+ <nav class="navbar navbar-expand-lg py-2.5 border-bottom border-bottom-primary  bg-body-tertiary" data-bs-theme="dark" style="background-color: hsl(246, 89%, 36%);" > {{!--here py is for padding in y --}}
+  <div class="container">
+    <a class="navbar-brand" href="#">
+       <img src="{{data.brandIconUrl}}" style="border-radius: 50%;" alt="Bootstrap" width="40" height="40">
+      {{data.brandName}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+        
+          {{#each data.links}}      
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{this.url}}">{{this.label}}</a>   {{!-- here this keyword is used as we used in the java  --}}
+        </li>
+         {{/each}}    
+
+
+
+        {{!-- instead of using this links we will use the loops to make the web dynamic --}}
+        {{!-- <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> --}}
+        {{!-- <li class="nav-item dropdown"> to add a dropdown services icon
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li> 
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> --}}
+        
+      </ul>
+      {{!-- <form class="d-flex" role="search"> to add a search bar with submit button at the right most corner of the navbar
+        <input class="form-control me-2" type="search" placeholder="Search the site" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> 
+      </form> --}}
+    </div>
+  </div>
+</nav>

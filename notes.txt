@@ -1,0 +1,55 @@
+note- all the bootstrap content will only support the bootstrap css formatting which was given on their site no other css files will work with them
+
+
+
+here in the package.json folder 
+
+
+
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js -e js,hbs"
+
+     // here the src/ refers to that file is in under the src folder because the nodemon always refer or look for the file in the same folder and -e js,hbs means that we have to also lool for the .hbs extension files
+
+     // we can put all the file we want to be started in this "start" : column 
+
+     // to stop a module from working the command is cntrl + can
+  }
+
+the express module is used to handle the get and post request
+
+folder description 
+public folder will contain all the static files
+src will contain all the backend
+views will contain all the html template engine files
+
+11/6/2023 till 42:30
+12/6/2023 till 1:14:00
+
+
+partials - if we want to use same code at different pages we create that code as a partial for eg like the navbar tag so all that partials we will keep it in the partial folder
+syntx of using them -   {{>navbar}}
+
+the bootstrap usage //
+
+
+there is some issur in storing the data to the mongo server to be resolved later 1 ghanta 20 min se deko
+
+
+
+the await keyword means that we are trying to use the syncronized environment with that line of code
+
+2ghnte se 2ghnte 5 min tak ka video imp concept ka hai called the jugaad to activate the slider
+
+
+bootstrap gives us 12 grids when we try to make a row to divide it div.col-md-4 (this will give the 4 rows each having the no of box = 4 because total boxes are 12
+)
+
+
+for the fonts use the site font awesomme it is one of the best site available copy the url by typing the font awsome cdn of the version you want to use and paste it on your style section
+
+3.17
+
+to hide the horizontal bar use style = overflowx:hidden;
